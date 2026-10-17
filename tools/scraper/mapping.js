@@ -178,7 +178,7 @@ const BANCAS = [
     ],
   },
   {
-    id: "ba2", name: "Bahia", short: "BA", flag: "🏝️",
+    id: "ba2", name: "Bahia", short: "BAH", flag: "🏝️",
     pages: {
       a: "https://deunoposte.com.br/resultado-jogo-do-bicho-bahia/",
     },

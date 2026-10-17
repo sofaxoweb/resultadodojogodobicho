@@ -917,7 +917,7 @@ window.JB_DATA = {
     {
       "id": "ba2",
       "name": "Bahia",
-      "short": "BA",
+      "short": "BAH",
       "flag": "🏝️",
       "draws": [
         {
