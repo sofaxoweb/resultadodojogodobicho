@@ -17,6 +17,7 @@ const { fetchAll } = require("./fetch");
 const { parsePage, matchDraw } = require("./parse");
 const { verify } = require("./verify");
 const { applyUpdates, todaySP } = require("./update");
+const { runLoterias } = require("./loterias");
 
 const DIR = __dirname;
 const REPORT = path.join(DIR, "report.json");
@@ -83,7 +84,8 @@ async function main() {
         continue;
       }
       for (const d of draws) {
-        if (IGNORE_RE.test(d.heading)) continue;
+        const ignoreRe = banca.ignore || IGNORE_RE;
+        if (ignoreRe.test(d.heading)) continue;
         const cfg = banca.draws.find(c => matchDraw(d.heading, c));
         if (!cfg) {
           if (d.milhares.length >= 5) report.unmapped.push(`${banca.id}/${source}: "${d.heading}"`);
@@ -139,6 +141,17 @@ async function main() {
     }
 
     fs.writeFileSync(REPORT, JSON.stringify(report, null, 2), "utf8");
+
+    // ---- 5) loterias Caixa (não-fatal: erros vão só para report.loterias,
+    //         sem abrir issue — a API da Caixa oscila e o dado anterior é mantido)
+    try {
+      const lot = await runLoterias({ dry: !!o.dry });
+      report.loterias = { updated: lot.updated, total: lot.total, errors: lot.errors };
+    } catch (e) {
+      report.loterias = { error: e.message };
+    }
+    fs.writeFileSync(REPORT, JSON.stringify(report, null, 2), "utf8");
+
     const bad = report.conflicts.length || report.errors.length;
     console.log(JSON.stringify({
       verified: report.verified.length, single: report.single.length,

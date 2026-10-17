@@ -127,6 +127,172 @@ const BANCAS = [
       { code: "21H", name: "21 horas", time: "21:00", times: ["21:00"] },
     ],
   },
+  {
+    id: "ce", name: "Ceará · Lotece", short: "CE", flag: "🪁",
+    pages: {
+      a: "https://deunoposte.com.br/resultado-jogo-do-bicho-ceara/",
+    },
+    draws: [
+      { code: "CE11", name: "Lotece · 11 horas", time: "11:00", times: ["11:00"], any: ["lotece"] },
+      { code: "CE14", name: "Lotece · 14 horas", time: "14:00", times: ["14:00"], any: ["lotece"] },
+      { code: "CE1545", name: "Lotece · 15h45", time: "15:45", times: ["15:45"], any: ["lotece"] },
+      { code: "CE19", name: "Lotece · 19 horas", time: "19:00", times: ["19:00"], any: ["lotece"] },
+    ],
+  },
+  {
+    id: "go", name: "Goiás", short: "GO", flag: "🌾",
+    pages: {
+      a: "https://deunoposte.com.br/resultado-jogo-do-bicho-goias/",
+    },
+    draws: [
+      { code: "GO720", name: "Goiás · 7h20",  time: "07:20", times: ["07:20"] },
+      { code: "GO920", name: "Goiás · 9h20",  time: "09:20", times: ["09:20"] },
+      { code: "GO1120", name: "Goiás · 11h20", time: "11:20", times: ["11:20"] },
+      { code: "GO1420", name: "Goiás · 14h20", time: "14:20", times: ["14:20"] },
+      { code: "GO1620", name: "Goiás · 16h20", time: "16:20", times: ["16:20"] },
+      { code: "GO1820", name: "Goiás · 18h20", time: "18:20", times: ["18:20"] },
+      { code: "GO2120", name: "Goiás · 21h20", time: "21:20", times: ["21:20"] },
+      { code: "GO2320", name: "Goiás · 23h20", time: "23:20", times: ["23:20"] },
+    ],
+  },
+  {
+    id: "pr", name: "Paraná", short: "PR", flag: "🌲",
+    pages: {
+      a: "https://deunoposte.com.br/resultado-jogo-do-bicho-parana/",
+    },
+    draws: [
+      { code: "PR11", name: "Paraná · 11 horas", time: "11:00", times: ["11:00"] },
+      { code: "PR14", name: "Paraná · 14 horas", time: "14:00", times: ["14:00"] },
+      { code: "PR16", name: "Paraná · 16 horas", time: "16:00", times: ["16:00"] },
+      { code: "PR18", name: "Paraná · 18 horas", time: "18:00", times: ["18:00"] },
+      { code: "PR21", name: "Paraná · 21 horas", time: "21:00", times: ["21:00"] },
+    ],
+  },
+  {
+    id: "rs", name: "Rio Grande do Sul", short: "RS", flag: "🧉",
+    pages: {
+      a: "https://deunoposte.com.br/resultado-jogo-do-bicho-rio-grande-do-sul/",
+    },
+    draws: [
+      { code: "RS14", name: "RS · 14 horas", time: "14:00", times: ["14:00"] },
+    ],
+  },
+  {
+    id: "ba2", name: "Bahia", short: "BA", flag: "🏝️",
+    pages: {
+      a: "https://deunoposte.com.br/resultado-jogo-do-bicho-bahia/",
+    },
+    draws: [
+      { code: "BA10", name: "Bahia · 10 horas", time: "10:00", times: ["10:00"] },
+      { code: "BA12", name: "Bahia · 12 horas", time: "12:00", times: ["12:00"] },
+      { code: "BA15", name: "Bahia · 15 horas", time: "15:00", times: ["15:00"] },
+      { code: "BA19", name: "Bahia · 19 horas", time: "19:00", times: ["19:00"] },
+      { code: "BA21", name: "Bahia · 21 horas", time: "21:00", times: ["21:00"] },
+    ],
+  },
+  {
+    id: "cg", name: "Campina Grande · PB", short: "CG", flag: "🎭",
+    pages: {
+      a: "https://deunoposte.com.br/resultado-jogo-do-bicho-campina-grande/",
+    },
+    draws: [
+      { code: "CG945", name: "Campina Grande · 9h45",  time: "09:45", times: ["09:45"] },
+      { code: "CG1045", name: "Campina Grande · 10h45", time: "10:45", times: ["10:45"] },
+      { code: "CG1245", name: "Campina Grande · 12h45", time: "12:45", times: ["12:45"] },
+      { code: "CG1545", name: "Campina Grande · 15h45", time: "15:45", times: ["15:45"] },
+      { code: "CG1805", name: "Campina Grande · 18h05", time: "18:05", times: ["18:05"] },
+    ],
+  },
+  {
+    id: "aval", name: "AVAL · Pernambuco", short: "AVAL", flag: "⭐",
+    pages: {
+      a: "https://deunoposte.com.br/resultado-aval-pernambuco/",
+    },
+    draws: [
+      { code: "AV920", name: "AVAL · 9h20",  time: "09:20", times: ["09:20"] },
+      { code: "AV11", name: "AVAL · 11 horas", time: "11:00", times: ["11:00"] },
+      { code: "AV1245", name: "AVAL · 12h45", time: "12:45", times: ["12:45"] },
+      { code: "AV14", name: "AVAL · 14 horas", time: "14:00", times: ["14:00"] },
+      { code: "AV1545", name: "AVAL · 15h45", time: "15:45", times: ["15:45"] },
+      { code: "AV17", name: "AVAL · 17 horas", time: "17:00", times: ["17:00"] },
+      { code: "AV19", name: "AVAL · 19 horas", time: "19:00", times: ["19:00"] },
+    ],
+  },
+  {
+    id: "abaese", name: "ABAESE", short: "ABAESE", flag: "🎯",
+    pages: {
+      a: "https://deunoposte.com.br/resultado-abaese/",
+    },
+    draws: [
+      { code: "AB10", name: "ABAESE · 10 horas", time: "10:00", times: ["10:00"] },
+      { code: "AB13", name: "ABAESE · 13 horas", time: "13:00", times: ["13:00"] },
+      { code: "AB16", name: "ABAESE · 16 horas", time: "16:00", times: ["16:00"] },
+    ],
+  },
+  {
+    id: "bs", name: "Boa Sorte · Goiás", short: "BS", flag: "🍀",
+    pages: {
+      a: "https://deunoposte.com.br/resultado-boa-sorte-goias/",
+    },
+    draws: [
+      { code: "BS9", name: "Boa Sorte · 9 horas",  time: "09:00", times: ["09:00"] },
+      { code: "BS11", name: "Boa Sorte · 11 horas", time: "11:00", times: ["11:00"] },
+      { code: "BS14", name: "Boa Sorte · 14 horas", time: "14:00", times: ["14:00"] },
+      { code: "BS16", name: "Boa Sorte · 16 horas", time: "16:00", times: ["16:00"] },
+      { code: "BS18", name: "Boa Sorte · 18 horas", time: "18:00", times: ["18:00"] },
+      { code: "BS21", name: "Boa Sorte · 21 horas", time: "21:00", times: ["21:00"] },
+      { code: "BS2330", name: "Boa Sorte · 23h30", time: "23:30", times: ["23:30"] },
+    ],
+  },
+  {
+    id: "sonhos", name: "Loteria dos Sonhos", short: "SONHOS", flag: "💭",
+    pages: {
+      a: "https://deunoposte.com.br/resultado-loteria-dos-sonhos/",
+    },
+    draws: [
+      { code: "SO11", name: "Sonhos · 11 horas", time: "11:00", times: ["11:00"], any: ["lotece"] },
+      { code: "SO14", name: "Sonhos · 14 horas", time: "14:00", times: ["14:00"], any: ["lotece"] },
+      { code: "SO1545", name: "Sonhos · 15h45", time: "15:45", times: ["15:45"], any: ["lotece"] },
+      { code: "SO19", name: "Sonhos · 19 horas", time: "19:00", times: ["19:00"], any: ["lotece"] },
+    ],
+  },
+  {
+    id: "popular", name: "Popular · Recife", short: "POP", flag: "🎪",
+    pages: {
+      a: "https://deunoposte.com.br/resultado-loteria-popular-recife/",
+    },
+    draws: [
+      { code: "PO930", name: "Popular · 9h30",  time: "09:30", times: ["09:30"] },
+      { code: "PO11", name: "Popular · 11 horas", time: "11:00", times: ["11:00"] },
+      { code: "PO1240", name: "Popular · 12h40", time: "12:40", times: ["12:40"] },
+      { code: "PO14", name: "Popular · 14 horas", time: "14:00", times: ["14:00"] },
+      { code: "PO1540", name: "Popular · 15h40", time: "15:40", times: ["15:40"] },
+      { code: "PO17", name: "Popular · 17 horas", time: "17:00", times: ["17:00"] },
+      { code: "PO1830", name: "Popular · 18h30", time: "18:30", times: ["18:30"] },
+    ],
+  },
+  {
+    id: "fed", name: "Loteria Federal", short: "FED", flag: "🇧🇷",
+    ignore: /maluca|soma|multiplica|cabecalho/i,
+    pages: {
+      a: "https://deunoposte.com.br/resultado-loteria-federal-jogo-do-bicho/",
+    },
+    draws: [
+      { code: "FED20", name: "Federal · 20 horas", time: "20:00", times: ["20:00"], any: ["federal"] },
+    ],
+  },
+  {
+    id: "giro", name: "Giro Paraíba", short: "GIRO", flag: "🔄",
+    pages: {
+      a: "https://deunopostenacional.com.br/giro-paraiba-jogo-do-bicho/",
+    },
+    draws: [
+      { code: "GI930", name: "Giro · 9h30",  time: "09:30", times: ["09:30"] },
+      { code: "GI14", name: "Giro · 14 horas", time: "14:00", times: ["14:00"] },
+      { code: "GI17", name: "Giro · 17 horas", time: "17:00", times: ["17:00"] },
+      { code: "GI1930", name: "Giro · 19h30", time: "19:30", times: ["19:30"] },
+    ],
+  },
 ];
 
 /* Cabeçalhos que nunca são sorteios (nem entram no relatório de unmapped). */

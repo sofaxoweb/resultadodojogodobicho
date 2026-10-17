@@ -2,9 +2,11 @@
 
 Site estático (HTML + CSS + JS puros, sem build) com o **resultado do jogo do bicho de hoje** — e o **de ontem**.
 
-**Páginas:** `index.html` (hoje) · `ontem.html` (ontem) · `consultar.html` (consulta de milhar + tabela dos 25 bichos)
+**Páginas:** `index.html` (hoje) · `ontem.html` (ontem) · `loterias.html` (Loterias Caixa) · `consultar.html` (consulta de milhar + tabela dos 25 bichos)
 
-**Bancas:** Rio de Janeiro · São Paulo · Minas Gerais · Pernambuco (Agreste) · Paraíba (Lotep) · Brasília (LBR) · Bahia (Paratodos)
+**Bancas (20):** Rio de Janeiro · São Paulo · Minas Gerais · Ceará · Goiás · Paraná · Rio Grande do Sul · Bahia · Bahia Paratodos · Pernambuco (Agreste) · AVAL · Paraíba (Lotep) · Campina Grande · Giro Paraíba · Brasília (LBR) · Boa Sorte Goiás · ABAESE · Loteria dos Sonhos · Popular Recife · Loteria Federal
+
+**Loterias Caixa (9):** Mega-Sena · Lotofácil · Quina · Lotomania · Timemania · Dupla Sena · Dia de Sorte · +Milionária · Loteria Federal (via API oficial da Caixa)
 
 ## Atualização automática 🤖
 

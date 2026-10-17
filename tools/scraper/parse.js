@@ -79,12 +79,14 @@ function parsePage(html) {
   const byKey = new Map();
   const h3re = /<h3[^>]*>([\s\S]*?)<\/h3>/gi;
   let m;
+  // tabela pode ser class="resultado-tabela" ou "resultado-tabela dnp-qb-table"
+  const tableRe = /<table[^>]*class="[^"]*resultado-tabela[^"]*"[^>]*>([\s\S]*?)<\/table>/i;
   while ((m = h3re.exec(html))) {
     const heading = stripTags(m[1]);
     if (!heading) continue;
-    // acha a próxima <table class="resultado-tabela"> após este h3
+    // acha a próxima tabela de resultado após este h3
     const rest = html.slice(m.index + m[0].length);
-    const tm = rest.match(/<table class="resultado-tabela">([\s\S]*?)<\/table>/i);
+    const tm = rest.match(tableRe);
     if (!tm) continue;
     // garante que não há outro h3 entre este h3 e a tabela
     const between = rest.slice(0, tm.index);

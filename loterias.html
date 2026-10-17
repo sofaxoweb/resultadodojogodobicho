@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resultado das Loterias de Hoje — Mega-Sena, Quina, Lotofácil e mais | Deu no Bicho</title>
+<meta name="description" content="Resultado das loterias Caixa de hoje: Mega-Sena, Lotofácil, Quina, Lotomania, Timemania, Dupla Sena, Dia de Sorte, +Milionária e Loteria Federal. Dezenas do último concurso, acumulou ou não e estimativa do próximo prêmio.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="canonical" href="loterias.html">
+<meta property="og:title" content="Resultado das Loterias de Hoje | Deu no Bicho">
+<meta property="og:description" content="Mega-Sena, Quina, Lotofácil, Lotomania, Timemania, Dupla Sena, Dia de Sorte, +Milionária e Loteria Federal — dezenas do último concurso.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Qual foi o resultado da Mega-Sena de hoje?",
+     "acceptedAnswer": {"@type": "Answer", "text": "As seis dezenas do último concurso da Mega-Sena estão no topo da página de Loterias, com número do concurso, data da apuração e o valor estimado do próximo prêmio."}},
+    {"@type": "Question", "name": "A Mega-Sena acumulou?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Cada carta de loteria mostra um selo 'Acumulou' quando ninguém acertou as seis dezenas, junto da estimativa do próximo concurso."}},
+    {"@type": "Question", "name": "Quais loterias aparecem nesta página?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Mega-Sena, Lotofácil, Quina, Lotomania, Timemania, Dupla Sena, Dia de Sorte, +Milionária e Loteria Federal — sempre o último concurso apurado de cada uma."}},
+    {"@type": "Question", "name": "De onde vêm os resultados das loterias?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Da API oficial da Caixa Econômica Federal, atualizada automaticamente após cada apuração."}}
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="assets/favicon.svg" alt="Deu no Bicho">
+      <span>
+        <span class="brand-name">Deu no <em>Bicho</em></span>
+        <span class="brand-tag">Resultado do jogo do bicho de hoje</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <a href="ontem.html">Ontem</a>
+      <a href="loterias.html" class="active">Loterias</a>
+      <a href="consultar.html">Consultar milhar</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Resultado das Loterias de Hoje</h1>
+    <p class="lede">Mega-Sena, Lotofácil, Quina, Lotomania, Timemania, Dupla Sena, Dia de Sorte, +Milionária e Loteria Federal — dezenas do último concurso de cada loteria da Caixa, atualizadas automaticamente.</p>
+    <p class="updated" id="lot-updated"></p>
+  </div>
+</section>
+
+<main class="wrap">
+  <section class="lot-grid" id="lot-grid" aria-live="polite" aria-label="Resultados das loterias"></section>
+
+  <section class="section faq" aria-labelledby="h-faq-lot">
+    <h2 id="h-faq-lot">Perguntas frequentes — Loterias</h2>
+    <details><summary>Qual foi o resultado da Mega-Sena de hoje?</summary><p>As seis dezenas do último concurso estão no cartão da Mega-Sena acima, com número do concurso, data e estimativa do próximo prêmio.</p></details>
+    <details><summary>Como sei se acumulou?</summary><p>Cada cartão mostra o selo <strong>Acumulou</strong> quando ninguém levou o prêmio principal — e o valor estimado do próximo concurso.</p></details>
+    <details><summary>De onde vêm estes resultados?</summary><p>Direto da API oficial da Caixa Econômica Federal, atualizada automaticamente após cada apuração.</p></details>
+    <details><summary>Onde vejo o resultado do jogo do bicho?</summary><p>Na <a href="index.html">página inicial</a>, com todos os sorteios de hoje organizados por banca e horário.</p></details>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Deu no Bicho</h4>
+        <p>Resultado do jogo do bicho de hoje e de ontem em 20 bancas, mais as loterias da Caixa: Mega-Sena, Quina, Lotofácil e todas as outras — com consulta de milhar e tabela dos 25 bichos.</p>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="index.html">Resultado de hoje</a></li>
+          <li><a href="ontem.html">Resultado de ontem</a></li>
+          <li><a href="loterias.html">Loterias Caixa</a></li>
+          <li><a href="consultar.html">Consultar milhar</a></li>
+          <li><a href="consultar.html#tabela">Tabela dos bichos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Bancas</h4>
+        <ul>
+          <li>Rio de Janeiro · São Paulo · Minas Gerais · Ceará · Goiás</li>
+          <li>Paraná · Rio Grande do Sul · Bahia · Pernambuco · Paraíba</li>
+          <li>Brasília · Campina Grande · AVAL · ABAESE · Boa Sorte</li>
+          <li>Loteria dos Sonhos · Popular Recife · Loteria Federal · Giro Paraíba</li>
+        </ul>
+      </div>
+    </div>
+    <p class="disclaimer">Aviso: site de caráter exclusivamente informativo. Não promovemos apostas, não vendemos palpites e não possuímos vínculo com a Caixa Econômica Federal nem com as bancas organizadoras dos sorteios. Jogue com responsabilidade — o jogo do bicho é contravenção no Brasil (art. 58 do Decreto-Lei 6.259/1944).</p>
+    <p class="copy">© 2026 Deu no Bicho · Resultados atualizados diariamente</p>
+  </div>
+</footer>
+
+<script src="assets/data-loterias.js"></script>
+<script>
+(function () {
+  var grid = document.getElementById("lot-grid");
+  var data = (window.JB_LOTERIAS && window.JB_LOTERIAS.lotteries) || [];
+  var upd = document.getElementById("lot-updated");
+  if (window.JB_LOTERIAS && window.JB_LOTERIAS.updatedAt) {
+    var d = new Date(window.JB_LOTERIAS.updatedAt);
+    upd.textContent = "Atualizado em " + d.toLocaleString("pt-BR", { timeZone: "America/Sao_Paulo" }) + " (horário de Brasília)";
+  }
+  if (!data.length) {
+    grid.innerHTML = '<p class="empty">Resultados em atualização. Volte em instantes.</p>';
+    return;
+  }
+  grid.innerHTML = data.map(function (l) {
+    var balls = l.dezenas.map(function (z) { return '<span class="ball">' + z + "</span>"; }).join("");
+    var balls2 = l.dezenas2 ? '<p class="lot-sub">2º sorteio</p><div class="balls">' + l.dezenas2.map(function (z) { return '<span class="ball ball-2">' + z + "</span>"; }).join("") + "</div>" : "";
+    var extra = l.extra ? '<p class="lot-extra">' + l.extra.label + ": <strong>" + l.extra.value + "</strong></p>" : "";
+    var trevos = l.trevos ? '<p class="lot-extra">Trevos: ' + l.trevos.map(function (t) { return '<span class="ball ball-trevo">🍀' + t + "</span>"; }).join(" ") + "</p>" : "";
+    var acum = l.acumulado ? '<span class="badge-acum">Acumulou!</span>' : '<span class="badge-ok">Saiu ganhador</span>';
+    var prox = (l.proximoValor && l.proximoValor !== "R$ 0")
+      ? '<p class="lot-next">Próximo prêmio estimado: <strong>' + l.proximoValor + "</strong>" + (l.proximoData ? " · sorteio " + l.proximoData : "") + "</p>"
+      : (l.proximoData ? '<p class="lot-next">Próximo sorteio: <strong>' + l.proximoData + "</strong></p>" : "");
+    var dt = l.date ? l.date.split("-").reverse().join("/") : "";
+    return '<article class="lot-card">' +
+      '<header><h2>' + l.name + "</h2>" + acum + "</header>" +
+      '<p class="lot-conc">Concurso ' + l.concurso + (dt ? " · " + dt : "") + "</p>" +
+      '<div class="balls">' + balls + "</div>" + balls2 + extra + trevos + prox +
+      "</article>";
+  }).join("");
+})();
+</script>
+</body>
+</html>

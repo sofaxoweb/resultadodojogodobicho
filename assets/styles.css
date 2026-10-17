@@ -98,7 +98,13 @@ img { max-width: 100%; }
 .next-item .cd { font-variant-numeric: tabular-nums; font-weight: 700; }
 
 /* ---------- banca tabs ---------- */
-.tabs { display: flex; gap: 8px; margin: 26px 0 18px; flex-wrap: wrap; }
+.tabs {
+  display: flex; gap: 8px; margin: 26px 0 18px;
+  flex-wrap: nowrap; overflow-x: auto; padding-bottom: 6px;
+  -webkit-overflow-scrolling: touch; scrollbar-width: thin;
+}
+.tabs::-webkit-scrollbar { height: 6px; }
+.tabs::-webkit-scrollbar-thumb { background: var(--line); border-radius: 3px; }
 .tab {
   border: 2px solid var(--line); background: var(--card);
   padding: 10px 22px; border-radius: 999px; font-weight: 700; font-size: 1rem;
@@ -253,3 +259,33 @@ tr.extra-prize { display: none; }
   .nav a { padding: 8px 10px; font-size: .85rem; }
   .brand-tag { display: none; }
 }
+
+/* ---------- loterias ---------- */
+.lot-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 18px; margin: 8px 0 8px; }
+.lot-card {
+  background: var(--card); border-radius: var(--radius);
+  box-shadow: var(--shadow); border-top: 5px solid var(--gold-dark);
+  padding: 20px 22px;
+}
+.lot-card header { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 4px; }
+.lot-card h2 { font-size: 1.25rem; margin: 0; }
+.lot-conc { color: var(--muted); font-size: .92rem; margin: 0 0 12px; }
+.balls { display: flex; flex-wrap: wrap; gap: 8px; margin: 6px 0 10px; }
+.ball {
+  width: 42px; height: 42px; border-radius: 50%;
+  background: var(--green-700); color: #fff;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-weight: 800; font-size: .95rem;
+}
+.ball-2 { background: var(--green-600); }
+.ball-trevo { width: auto; border-radius: 999px; padding: 0 12px; background: var(--gold); color: var(--ink); font-size: .85rem; }
+.badge-acum, .badge-ok {
+  font-size: .75rem; font-weight: 800; text-transform: uppercase; letter-spacing: .04em;
+  padding: 4px 10px; border-radius: 999px; white-space: nowrap;
+}
+.badge-acum { background: #fff4d6; color: #8a6d00; border: 1px solid var(--gold); }
+.badge-ok { background: var(--green-100); color: var(--green-700); border: 1px solid var(--green-600); }
+.lot-sub { font-weight: 700; font-size: .9rem; color: var(--muted); margin: 8px 0 2px; }
+.lot-extra, .lot-next { font-size: .92rem; margin: 6px 0; }
+.lot-next strong { color: var(--green-700); }
+.empty { padding: 30px; text-align: center; color: var(--muted); }
