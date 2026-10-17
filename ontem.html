@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resultado do Jogo do Bicho de Ontem | Deu no Bicho</title>
+<meta name="description" content="Confira o resultado do jogo do bicho de ontem: milhares sorteadas, grupo e bicho de cada prêmio, por horário, no Rio de Janeiro, São Paulo, Minas Gerais e Bahia.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="assets/styles.css">
+<meta property="og:title" content="Resultado do Jogo do Bicho de Ontem | Deu no Bicho">
+<meta property="og:description" content="Milhares, grupos e bichos de ontem, organizados por horário e banca.">
+<meta property="og:type" content="website">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="assets/favicon.svg" alt="Deu no Bicho">
+      <span>
+        <span class="brand-name">Deu no <em>Bicho</em></span>
+        <span class="brand-tag">Resultado do jogo do bicho de hoje</span>
+      </span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Início</a>
+      <a href="ontem.html" class="active">Ontem</a>
+      <a href="consultar.html">Consultar milhar</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Resultado do Jogo do Bicho <span class="gold">de Ontem</span></h1>
+    <p class="lead">Perdeu algum sorteio? Confira aqui as milhares, grupos e bichos publicados ontem, organizados por horário e banca. <a href="index.html" style="color:var(--gold);font-weight:700">← Ver resultados de hoje</a></p>
+    <div class="hero-meta">
+      <span class="date-pill">📅 <span data-jb-date>carregando…</span></span>
+      <span class="updated">Última atualização: <span data-jb-updated>…</span></span>
+    </div>
+    <div class="last-result" id="last-result" aria-live="polite"></div>
+  </div>
+</section>
+
+<div class="next-strip">
+  <div class="wrap" id="next-draws"></div>
+</div>
+
+<main class="wrap">
+  <div class="tabs" id="banca-tabs" role="tablist" aria-label="Escolher banca"></div>
+  <section class="draws" id="draws" aria-live="polite"></section>
+
+  <section class="section" aria-labelledby="h-arquivo">
+    <h2 id="h-arquivo"><span class="gold-u">Arquivo</span> do deu no poste</h2>
+    <p class="sub" style="max-width:780px">Perdeu algum sorteio? Esta página guarda o <strong>resultado do jogo do bicho de ontem</strong> com as milhares, grupos e bichos de cada extração, por banca e horário — do PPT da manhã à Corujinha da noite. Para os números de hoje, <a href="index.html">volte à página inicial</a>.</p>
+  </section>
+
+  <section class="section">
+    <div class="tool-teaser">
+      <div>
+        <h2>🔍 Será que a sua milhar saiu ontem?</h2>
+        <p>Digite a sua milhar ou dezena e descubra na hora qual é o bicho — a consulta confere os sorteios de hoje.</p>
+      </div>
+      <a class="btn" href="consultar.html">Consultar agora</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Deu no Bicho</h4>
+        <p>Resultado do jogo do bicho de hoje e de ontem, organizado por horário e banca, com consulta de milhar e tabela dos 25 bichos.</p>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="index.html">Resultado de hoje</a></li>
+          <li><a href="ontem.html">Resultado de ontem</a></li>
+          <li><a href="consultar.html">Consultar milhar</a></li>
+          <li><a href="consultar.html#tabela">Tabela dos bichos</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="disclaimer">Aviso: site de caráter exclusivamente informativo. Não promovemos apostas, não vendemos palpites e não possuímos vínculo com as empresas ou bancas organizadoras dos sorteios. Os números são publicados após divulgação. Jogue com responsabilidade — o jogo do bicho é contravenção no Brasil (art. 58 do Decreto-Lei 6.259/1944).</p>
+    <p class="copy">© 2026 Deu no Bicho · Resultados atualizados diariamente</p>
+  </div>
+</footer>
+
+<script src="assets/data-ontem.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

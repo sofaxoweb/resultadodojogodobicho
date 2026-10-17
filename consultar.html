@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Consultar Milhar do Jogo do Bicho | Deu no Bicho</title>
+<meta name="description" content="Descubra o bicho e o grupo de qualquer milhar ou dezena do jogo do bicho e confira se ela saiu nos sorteios de hoje. Tabela completa dos 25 grupos.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="assets/styles.css">
+<meta property="og:title" content="Consultar Milhar do Jogo do Bicho | Deu no Bicho">
+<meta property="og:description" content="Digite sua milhar e veja o bicho na hora — e se ela saiu hoje.">
+<meta property="og:type" content="website">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="assets/favicon.svg" alt="Deu no Bicho">
+      <span>
+        <span class="brand-name">Deu no <em>Bicho</em></span>
+        <span class="brand-tag">Resultado do jogo do bicho de hoje</span>
+      </span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Início</a>
+      <a href="ontem.html">Ontem</a>
+      <a href="consultar.html" class="active">Consultar milhar</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>🔍 <span class="gold">Consultar</span> milhar</h1>
+    <p class="lead">Digite uma milhar (4 dígitos) ou dezena (2 dígitos) para descobrir o bicho e o grupo — e ver se ela saiu em algum prêmio de hoje (<span data-jb-dateshort>…</span>).</p>
+  </div>
+</section>
+
+<main class="wrap">
+  <section class="section" aria-labelledby="h-como-cons">
+    <h2 id="h-como-cons"><span class="gold-u">Como</span> descobrir o bicho de uma milhar</h2>
+    <p class="sub" style="max-width:760px">Toda milhar do jogo do bicho pertence a um dos <strong>25 grupos</strong> — e cada grupo tem o seu bicho. A regra é simples: pegue os <strong>dois últimos dígitos</strong> da milhar (a <strong>dezena</strong>) e veja em qual grupo ela cai. A dezena 25, por exemplo, está no grupo 7, o <strong>Carneiro</strong>; a dezena 00 fecha o grupo 25, a <strong>Vaca</strong>.</p>
+    <div class="consult-box" style="margin-top:18px">
+      <form id="consult-form">
+        <label for="consult-input">Sua milhar ou dezena</label>
+        <div class="consult-row">
+          <input id="consult-input" type="text" inputmode="numeric" maxlength="4"
+                 placeholder="Ex.: 7025" autocomplete="off" aria-describedby="consult-hint">
+          <button class="btn" type="submit">Consultar</button>
+        </div>
+        <p class="hint" id="consult-hint">Vale milhar com zero à esquerda: digite 0053, não 53.</p>
+      </form>
+      <div class="result-panel" id="consult-result" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="section" id="tabela">
+    <h2><span class="gold-u">Tabela</span> dos 25 bichos</h2>
+    <p class="sub">Cada grupo reúne 4 dezenas. A dezena 00 fecha o grupo 25.</p>
+    <div class="bicho-grid" id="bicho-grid"></div>
+  </section>
+
+  <section class="section faq">
+    <h2><span class="gold-u">Como</span> conferir o resultado</h2>
+    <details open>
+      <summary>Da milhar ao bicho, passo a passo</summary>
+      <p>1) Pegue os <strong>2 últimos dígitos</strong> da milhar (a dezena). 2) Encontre o grupo na tabela acima — cada grupo cobre 4 dezenas seguidas. 3) O bicho do grupo é o bicho da sua milhar. Exemplo: <strong>7025</strong> → dezena <strong>25</strong> → grupo <strong>7</strong> → <strong>Carneiro</strong> 🐑.</p>
+    </details>
+    <details>
+      <summary>O que a consulta verifica nos sorteios de hoje?</summary>
+      <p>A ferramenta compara o que você digitou com todos os prêmios já publicados hoje: se a <strong>milhar for idêntica</strong> a alguma sorteada, ela aparece como "milhar exata". Se você digitou só a dezena, mostramos os prêmios do 1º ao 5º em que ela apareceu.</p>
+    </details>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Deu no Bicho</h4>
+        <p>Resultado do jogo do bicho de hoje, organizado por horário e banca, com consulta de milhar e tabela dos 25 bichos.</p>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="index.html">Resultado de hoje</a></li>
+          <li><a href="ontem.html">Resultado de ontem</a></li>
+          <li><a href="consultar.html">Consultar milhar</a></li>
+          <li><a href="consultar.html#tabela">Tabela dos bichos</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="disclaimer">Aviso: site de caráter exclusivamente informativo. Não promovemos apostas, não vendemos palpites e não possuímos vínculo com as empresas ou bancas organizadoras dos sorteios. Jogue com responsabilidade — o jogo do bicho é contravenção no Brasil (art. 58 do Decreto-Lei 6.259/1944).</p>
+    <p class="copy">© 2026 Deu no Bicho · Resultados atualizados diariamente</p>
+  </div>
+</footer>
+
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
