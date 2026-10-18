@@ -1,10 +1,22 @@
 {
-  "at": "2026-10-18T07:53:02.914Z",
+  "at": "2026-10-18T12:31:02.639Z",
   "today": "2026-10-18",
   "verified": [],
-  "single": [],
+  "single": [
+    "sp/SP8 (só A)",
+    "mg/MG11 (só A)",
+    "df/DF040 (só A)",
+    "df/DF140 (só A)",
+    "df/DF240 (só A)",
+    "df/DF740 (só A)",
+    "df/DF840 (só A)",
+    "go/GO720 (só A)",
+    "go/GO920 (só A)"
+  ],
   "conflicts": [],
-  "unmapped": [],
+  "unmapped": [
+    "sp/a: \"Sorteio das 9 Horas (9h20) 1º ao 10º\""
+  ],
   "duplicates": [],
   "errors": [
     "rj/b: HTTP 403",
@@ -15,9 +27,19 @@
     "rs/a: página com data 2026-10-17 (hoje é 2026-10-18) — ignorada",
     "sonhos/a: página com data 2026-10-17 (hoje é 2026-10-18) — ignorada"
   ],
-  "applied": [],
+  "applied": [
+    "sp/SP8",
+    "mg/MG11",
+    "df/DF040",
+    "df/DF140",
+    "df/DF240",
+    "df/DF740",
+    "df/DF840",
+    "go/GO720",
+    "go/GO920"
+  ],
   "skipped": [],
-  "rolledOver": false,
+  "rolledOver": true,
   "loterias": {
     "updated": 0,
     "total": 9,
