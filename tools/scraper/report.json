@@ -1,8 +1,12 @@
 {
-  "at": "2026-10-22T04:22:12.601Z",
+  "at": "2026-10-22T08:25:38.422Z",
   "today": "2026-10-22",
   "verified": [],
-  "single": [],
+  "single": [
+    "df/DF040 (só A)",
+    "df/DF140 (só A)",
+    "df/DF240 (só A)"
+  ],
   "conflicts": [],
   "unmapped": [],
   "duplicates": [],
@@ -13,9 +17,13 @@
     "df/b: HTTP 403",
     "fed/a: página com data 2026-10-21 (hoje é 2026-10-22) — ignorada"
   ],
-  "applied": [],
+  "applied": [
+    "df/DF040",
+    "df/DF140",
+    "df/DF240"
+  ],
   "skipped": [],
-  "rolledOver": false,
+  "rolledOver": true,
   "loterias": {
     "updated": 9,
     "total": 9,
