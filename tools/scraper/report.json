@@ -1,8 +1,18 @@
 {
-  "at": "2026-10-24T07:58:17.387Z",
+  "at": "2026-10-24T12:36:52.232Z",
   "today": "2026-10-24",
   "verified": [],
-  "single": [],
+  "single": [
+    "rj/PPT (só A)",
+    "sp/SP8 (só A)",
+    "df/DF040 (só A)",
+    "df/DF140 (só A)",
+    "df/DF240 (só A)",
+    "df/DF740 (só A)",
+    "df/DF840 (só A)",
+    "go/GO720 (só A)",
+    "go/GO920 (só A)"
+  ],
   "conflicts": [],
   "unmapped": [],
   "duplicates": [],
@@ -10,12 +20,21 @@
     "rj/b: HTTP 403",
     "sp/b: HTTP 403",
     "pb/b: HTTP 403",
-    "df/b: HTTP 403",
-    "fed/a: página com data 2026-10-21 (hoje é 2026-10-24) — ignorada"
+    "df/b: HTTP 403"
   ],
-  "applied": [],
+  "applied": [
+    "rj/PPT",
+    "sp/SP8",
+    "df/DF040",
+    "df/DF140",
+    "df/DF240",
+    "df/DF740",
+    "df/DF840",
+    "go/GO720",
+    "go/GO920"
+  ],
   "skipped": [],
-  "rolledOver": false,
+  "rolledOver": true,
   "loterias": {
     "updated": 9,
     "total": 9,
